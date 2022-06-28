@@ -1,0 +1,348 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header .nav-toggler{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    display: none;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: 18px;
+    font-weight: 400;
+    margin-left: 40px;
+    text-transform: uppercase;
+    transition: all;
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+    transition-property: 1s;
+    transition-timing-function: 0.5s;
+}
+.navbar a:hover{
+    color: #e62b4a;  
+}
+.carousel{
+    height: 570px;
+    background-image: url(./image-video/home_slider.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.carousel h2{
+    font-size: 50px;
+}
+.carousel a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #e62b4a;
+}
+.service{
+    background-color: black;
+    padding: 80px 0px;
+}
+.service .title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service .title span{
+    color: #e62b4a;
+    font-size: 14px;
+    font-weight: 300;
+}
+.service .title h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+.service .title p{
+    color: #888888;
+    font-size: 16px;
+    font-weight: 700;
+}
+.service .main .row{
+    display: flex;
+    margin: 0 15px;
+    flex-wrap: wrap;
+}
+.service .main .col{
+    width: 20%;
+    padding: 0px 15px;
+}
+.service .main .item{
+    background-color: aliceblue;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #848482;
+}
+.service .main .item i{
+    font-size: 40px;
+}
+.service .main .item p{
+    font-size: 14px;
+}
+.statistic{
+    background-color: black;
+    height: 300px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 90px;
+}
+.statistic .row{
+    display: flex;
+}
+.statistic .col{
+    width: 25%;
+}
+.statistic .col .item{
+
+}
+.statistic .col .item h2{
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+.statistic .col .item p{
+    color: #888888;
+    font-size: 20px;
+}
+.news .title{
+    text-align: center;
+    background-color: #F3F3F3;
+    padding: 40px 0;
+}
+.news .title span{
+    color: #888888;
+    font-weight: 400
+}
+.news .title h2{
+    font-size: 50px;
+    font-weight: 400
+}
+.news .title p{
+    font-size: 16px;
+    color: #888888;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.news .main{
+    width: 100%;
+}
+.news .main .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  
+    grid-template-rows: repeat(4,1fr);
+    gap: 30px;
+}
+.news .main .row .item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.news .main .row .item1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.news .main .row .item10{
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+}
+.news .main .row .item img{
+    width: 100%;
+    height: 100%;
+    display: block; 
+    object-fit: cover;
+    filter: grayscale(50%) contrast(50%);
+}
+.news .main .info{
+    background-color: rgba(230, 43, 74, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    visibility: hidden;
+    transition: all .5s;
+}
+.news .main .info .active{
+    text-align: right;
+}
+.news .main .info .active i{
+    background-color: #ffffff;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.news .main .info .active i:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.news .main .info .detail{
+    color: white;
+}
+.news .main .item:hover .info{
+    visibility: visible;
+}
+.experience{
+    background-image: url(./image-video/bussiness_img_1.jpg);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.experience .title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.experience .title span{
+    color: #e62b4a;
+}
+.experience .title h2{
+    color: #ffffff;
+    font-size: 50px;
+}
+.experience .title p{
+    color: #888888;
+}
+.experience .main video{
+    width: 100%;
+}
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact .title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact .title h2{
+    font-size: 50px;
+}
+.contact .title p{
+    color: #888888;
+}
+.contact .main .container{
+    display: flex;
+}
+.contact .main .maps{
+    width: 60%;
+    margin-right: 20px;
+}
+.contact .main form{
+    width: 40%;
+}
+.contact .main input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.contact .main textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .main button{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    transition: all .5s;
+}
+.contact .main button:hover{
+    background-color: #e62b4a;
+    cursor: pointer;
+}
+
+
+/* điện thoại (xoay dọc) */
+@media screen and (max-width:576px){
+    /* css */
+    .header .navbar{
+        display: none;
+    }
+    .header .nav-toggler{
+        display: inline-block;
+    }
+    .carousel h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .service .title h2 {
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .service .title p {
+        color: #888888;
+        font-size: 16px;
+        font-weight: 700;
+        display: none;
+    }
+    .service .main .col{
+        width: 100%;
+    }
+    .news .main .row{
+        display: block;
+    }
+    .contact .title h2 {
+        font-size: 30px;
+    }
+    .contact .title p {
+        display: none;
+    }
+    .contact .main .maps,.contact .main form{
+        width: 100%;
+        background-size: 100%;
+    }
+}
+
+/* điện thoại xoay ngang */
+@media screen and (min-width:576px) and (max-width:667px){
+
+}
